@@ -8,3 +8,6 @@ $newname = rand().".".$ext;
 $from = $_FILES['pic']['tmp_name'];
 $to = "uploader/".$email."/".$newname;
 move_uploaded_file($from,$to);
+if (move_uploaded_file($from,$to) == true);
+    echo "<h1 style='color:green; text-align:center;padding-top:70px';>"."OK your file Uploaded..."."</h1>";
+?>
